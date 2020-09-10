@@ -329,6 +329,7 @@ width: 200px;
   width: 183px;
   height: 35px;
   background-image: url(../images/logo_place_footer.svg);
+  background-size: cover;
 }
 
 .footer__author{
