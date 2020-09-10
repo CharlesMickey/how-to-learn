@@ -1,3 +1,4 @@
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -7,25 +8,372 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #000000;
+}
+.font-size-18{
+  font-size: 18px;
 }
 
+.font-size-24{
+  font-size: 24px;
+}
+
+.font-size-36{
+  font-size: 36px;
+}
+
+.font-size-60{
+  font-size: 60px;
+}
+
+.font-weight-normal{
+  font-weight: 400;
+}
+.font-weight-half-bold{
+  font-weight: 700;
+}
+
+
+.line-height-30{
+  line-height: 30px;
+}
+
+.line-height-34{
+  line-height: 34px;
+}
+
+.line-height-51{
+  line-height: 51px;
+}
+
+.line-height-1-15{
+  line-height: 1.15;
+}
+
+.line-height-1-2{
+  line-height: 1.2;
+}
+
+.decoration-none{
+  text-decoration: none;
+  color: white;
+}
 .header {
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  display: flex;
+	  /* выше установили ограничения для секции */
 }
 
+.logo{
+display: flex;
+}
+
+.logo_place_header{
+width: 183px;
+height: 32px;
+position: absolute;
+background-image: url(../images/logo_place_header.svg);
+top: 30px;
+left: 64px;
+z-index: 2;
+}
+
+.header__title{
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  display: flex;
+  margin: auto auto auto 64px;
+  align-items: center;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  line-height: 25px;
+  z-index: 2;
+}
+
+.header__link{
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.header__main-illustration{
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background-color:  #2f80ed;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+  .two-columns__container{
+    width: 80%;
+    display: flex;
+    margin: 100px auto 100px auto;
+    justify-content: space-between;
+  }
+
+  .two-columns__brief{
+    width: 175px;
+    line-height: 1.2;
+    margin: 0;
+    color: #2f80ed
+
+  }
+
+  .two-columns__main-text{
+    width: 80%;
+    min-width: 784px;
+  }
+
+  .two-columns__paragraph-top{
+  margin: 0;
+  }
+
+  .two-columns__paragraph-center{
+  margin: 30px 0 30px;
+  }
+
+  .two-columns__paragraph-bottom{
+  margin: 0;
+  }
+
+  .section-title{
+    font-size: 60px;
+    display: flex;
+  }
+
+  .section-title_theme_white{
+    width: 60%;
+    margin: 100px auto 20px;
+    justify-content: center;
+  }
+
+  .section-subtitle{
+        display: flex;
+
+  }
+
+  .section-subtitle_theme_white{
+     width: 60%;
+     margin: 0 auto;
+    justify-content: center;
+  }
+
+  .table{
+    display: flex;
+}
+
+  .table_theme_white{
+    width: 1100px;
+    margin: 0 auto 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+  .table__cell{
+    display: flex;
+}
+
+  .table__cell_theme_white{
+    width: 250px;
+    margin: 60px 0 0;
+    flex-direction: column;
+}
+
+  .table__heading{
+    display: flex;
+}
+
+  .table__heading_theme_white{
+   margin: 0;
+   width: 250px;
+}
+
+.table__text{
+  display: flex;
+}
+
+.table__text_theme_white{
+  margin: 20px 0 auto;
+  width: 250px;
+}
+
+.feinman{
+  position: relative;
+  display: flex;
+  height: 790px;
+  background: url(../images/feynman.png) bottom left no-repeat #f2f2f2;
+  background-size: 867px 637px;
+  flex-direction: column;
+}
+
+.feinman__title{
+  font-size: 120px;
+  width: 648px;
+  display: flex;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+.feinman__subtitle{
+  display: flex;
+  margin: 70px auto auto;
+}
+
+.feinman__link{
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.kaufman_theme_dark{
+  color:white ;
+  background-color:  #1f1f1f;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title_theme_dark{
+  line-height: 69px;
+  width: 60%;
+  margin: 90px auto 20px;
+  justify-content: center;
+}
+
+.section-subtitle_theme_dark{
+  width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.table_theme_dark{
+  width: 1100px;
+  margin: 0 auto 90px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__cell_theme_dark{
   width: 200px;
+  margin: 80px 0 0;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.table__heading_theme_dark{
+ margin: 0;
+ width: 200px;
+}
+
+.table__text_theme_dark{
+margin: 20px 0 auto;
+width: 200px;
+}
+
+.kaufman__triangle{
+  width: 877px;
+  height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  position: absolute;
+  top: 0px;
+  right: -210px;
+  z-index: 0;
+}
+
+.footer_general{
+  display: flex;
+  min-height: 350px;
+  background-color:  #1f1f1f;
+}
+
+.footer__columns{
+  display: flex;
+  margin: 60px auto 40px;
+  width: 90%;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  position: relative;
+}
+
+.footer__column_content_copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-basis: 711px;
+}
+
+.logo_place_footer{
+  margin: 0 auto auto 0;
+  width: 183px;
+  height: 35px;
+  background-image: url(../images/logo_place_footer.svg);
+}
+
+.footer__author{
+padding: 18px 0 18px;
+margin: auto auto 0 0;
+line-height: 25px;
+}
+
+.footer__navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-basis: 711px;
+}
+
+.footer__column_content_info{
+ display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading{
+  margin-bottom: 20px;
+}
+
+.footer__list-column-links{
+  list-style-type: none;
+  margin: 0px;
+  padding:  0px 0px 16px;
+}
+
+.footer__column_content_social{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0px;
+}
+
+.footer__list-social-icon{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px 0px 16px;
+}
+
+.footer__social-icon_img{
+margin:0px 10px 0 0;
+width: 16px;
+height: 16px;
 }
