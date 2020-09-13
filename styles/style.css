@@ -52,7 +52,6 @@ z-index: 2;
   bottom: 30px;
   left: 64px;
   margin: 0;
-  line-height: 25px;
   z-index: 2;
 }
 
@@ -305,18 +304,14 @@ line-height: 25px;
 font-size: 18px;
 }
 
-.footer__navigation{
+.footer__column{
   display: flex;
-  width: 50%;
-  justify-content: space-around;
 }
 
 .footer__column_content_info{
  display: flex;
   flex-direction: column;
-  top: 0px;
-  right: 0;
-  bottom: 0;
+
   margin: 0 auto 0;
 }
 
