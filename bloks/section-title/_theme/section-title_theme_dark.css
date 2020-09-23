@@ -1,0 +1,9 @@
+.section-title_theme_dark{
+  color: #FFFFFF;
+  position: relative;
+    z-index: 1;
+}
+
+.section-title_theme_dark:first-of-type{
+  margin-top: 90px;
+  }
