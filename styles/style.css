@@ -1,3 +1,16 @@
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+
+.rotation{
+  animation: rotation 20s infinite linear;
+}
 
 .page {
   min-width: 1100px;
@@ -17,6 +30,7 @@
   max-height: 756px;
   background-color: #f2f2f2;
   display: flex;
+  overflow: hidden;
 	  /* выше установили ограничения для секции */
 }
 
@@ -59,6 +73,7 @@ z-index: 2;
 .header__link{
   text-decoration: none;
   color: #2f80ed;
+  transition: opacity 0.3s linear;
 }
 
 .header__link:hover {
@@ -139,11 +154,111 @@ z-index: 2;
 
   }
 
+  .techniques{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .cards{
+    width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .cards__item{
+    width: 240px;
+    margin-right: 100px;
+  }
+
+  .cards__item:nth-of-type(3){
+    margin-right: 0;
+  }
+
+  .cards__image{
+    width: 160px;
+    height: 160px;
+    margin: 60px 40px 43px;
+    border-radius: 80px;
+  }
+
+  .cards__title{
+    margin: 0 0 16px;
+    font-size: 24px;
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .cards__description{
+    margin: auto;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+  }
+
+  .video__iframes{
+    display: flex;
+    margin:  50px auto  -60px auto;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .video__iframe:first-of-type{
+    margin: 0 20px 0 0;
+  }
+
+  .oakley{
+    background-color:  #f2f2f2;
+    padding-top: 60px;
+
+  }
+
+.feynman{
+  position: relative;
+  min-height: 790px;
+  background: url(../images/feynman.png) bottom left no-repeat #f2f2f2;
+  background-size: 867px 637px;
+}
+
+.feynman__title{
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: bold;
+  width: 648px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.feynman__subtitle{
+  font-size: 36px;
+  line-height: 51px;
+  margin: 70px auto auto;
+  text-align: center;
+}
+
+.feynman__link{
+  font-size: 36px;
+  line-height: 51px;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  text-decoration: none;
+  color: #000000;
+  transition: opacity 0.3s linear;
+}
+
+.feynman__link:hover{
+  opacity: 0.5;
+}
 
 
   .table{
     width: 1100px;
     margin: 0 auto 100px;
+    padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -173,44 +288,76 @@ z-index: 2;
 
 }
 
-.feynman{
-  position: relative;
-  min-height: 790px;
-  background: url(../images/feynman.png) bottom left no-repeat #f2f2f2;
-  background-size: 867px 637px;
+.khan {
+  background-color: #F2F2F2;
 }
 
-.feynman__title{
-  font-size: 120px;
+.khan__container{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 105px;
+}
+
+
+.khan__author{
+  margin: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.khan__title{
+  margin: 0;
+  font-size: 60px;
+  line-height: 1.15;
+}
+
+.khan__quote{
+  width: 790px;
+  margin: 50px auto 36px 0;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.khan__quote-author{
+  margin: 0;
+  font-size: 24px;
   line-height: 1.15;
   font-weight: bold;
-  width: 648px;
+}
+
+.khan__quote-author-subline{
+  margin: 10px 0 68px;
+  font-size: 24px;
+  line-height: 1.15;
+}
+
+.khan__book-container{
   display: flex;
-  margin: 0 auto;
-  padding-top: 100px;
-  text-align: center;
 }
 
-.feynman__subtitle{
-  font-size: 36px;
-  line-height: 51px;
-  margin: 70px auto auto;
-  text-align: center;
+.khan__book-pic{
+  height: 608px;
+  width: 620px;
+  background-image: url(../images/khan-book.jpg);
+  background-position: 0 0;
+  background-size: cover;
 }
 
-.feynman__link{
-  font-size: 36px;
-  line-height: 51px;
-  position: absolute;
-  top: 50%;
-  right: 48px;
+.khan__buy-link{
+  align-self: flex-start;
+  margin-left: 48px;
+  font-size: 30px;
+  line-height: 42px;
   text-decoration: none;
-  color: #000000;
+  color: #2f80ed;
+  transition: opacity 0.3s linear;
 }
 
-.feynman__link:hover{
-  opacity: 0.5;
+.khan__buy-link:hover {
+  opacity: .5;
 }
+
+
 
 .kaufman{
   background-color:  #1f1f1f;
@@ -220,6 +367,8 @@ z-index: 2;
 
 .section-title_theme_dark{
   color: #FFFFFF;
+  position: relative;
+    z-index: 1;
 }
 
 .section-title_theme_dark:first-of-type{
@@ -228,6 +377,8 @@ z-index: 2;
 
 .section-subtitle_theme_dark{
   color: #FFFFFF;
+  position: relative;
+  z-index: 1;
 }
 
 .table_theme_dark:first-of-type{
@@ -261,6 +412,42 @@ z-index: 2;
   top: 0px;
   right: -210px;
   z-index: 0;
+}
+
+.resources__logo-zone{
+  margin: 80px auto 217px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resources__logo{
+  height: 38px;
+  width: 270px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s linear;
+}
+
+.resources__logo:hover {
+  opacity: .5;
+}
+
+.resources__logo_arzamas{
+  background-image: url(../images/logo/resources-arzamas.svg);
+}
+
+.resources__logo_n1{
+  background-image: url(../images/logo/resources-n1.svg);
+}
+
+.resources__logo_strelka{
+  background-image: url(../images/logo/resources-strelka.svg);
+}
+
+.resources__logo_polka{
+  background-image: url(../images/logo/resources-polka.svg);
 }
 
 .footer{
@@ -329,6 +516,7 @@ font-size: 18px;
 .footer__link{
 text-decoration: none;
 color: #FFFFFF;
+transition: opacity 0.3s linear;
 }
 
 .footer__link:hover{
