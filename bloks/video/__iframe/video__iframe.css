@@ -1,3 +1,7 @@
-  .video__iframe:first-of-type{
+  .video__iframe{
+  border:none;
+}
+
+   .video__iframe:first-of-type{
     margin: 0 20px 0 0;
   }
