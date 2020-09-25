@@ -3,4 +3,5 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    padding-left: 0;
   }
